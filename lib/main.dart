@@ -9,7 +9,7 @@ void main() {
       initialRoute: '/home',
       routes: {
         '/home': (context) => MyHomePage(title: 'Notification'),
-        '/ziki': (context) => ListMateri(),
+        '/list_materi': (context) => ListMateri(),
         '/enroll': (context) => Enroll(),
         '/daftar_quiz': (context) => DaftarQuiz(),
       },
@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/ziki');
+                Navigator.pushNamed(context, '/list_materi');
               },
             ),
             InkWell(
